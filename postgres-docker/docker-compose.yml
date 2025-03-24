@@ -1,0 +1,16 @@
+services:
+
+  postgres:
+    container_name: postgres-sql
+    image: postgres
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_USER=rafael
+      - POSTGRES_PASSWORD=1qazzaq!
+      - POSTGRES_DATABASE=enterprise_resource_planning
+    volumes:
+      - db_pg_date:/data/postgresql
+
+volumes:
+  db_pg_date:
