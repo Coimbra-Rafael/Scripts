@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS tb_client_config (
 --------------------------------------------------
 -- 04. Configuração do fornecedores
 --------------------------------------------------
-CREATE TABLE IF NOT EXISTS tb_client_config (
+CREATE TABLE IF NOT EXISTS tb_supplier_config (
     customer_id BIGINT NOT NULL,
     enterprise_id INT NOT NULL,
     supplier_id BIGINT NOT NULL,
